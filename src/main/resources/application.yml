@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://int-interoperability-cdc-rds-01-rds-sz-rdsinstance-rrjtfkhf8hc7.cabaui5ekxew.ap-south-1.rds.amazonaws.com/los
+    username: interoperability_readwrite
+    password: M0J0Jnt7wv3GhD
+    jpa:
+      hibernate.ddl-auto: update
+      generate-ddl: true
+      show-sql: true
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
